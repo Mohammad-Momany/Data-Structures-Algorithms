@@ -45,6 +45,20 @@ class LinkedList {
         node = node.next
 
     }
+    clear() {
+        this.head = null
+    }
+
+    removeFirst() {
+
+        if (!this.head) {
+            return
+        }
+
+        return this.head = this.head.next
+
+
+    }
 
 
 

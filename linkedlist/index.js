@@ -86,6 +86,21 @@ class LinkedList {
         }
     }
 
+
+
+    getAt(index) {
+        let node = this.head
+        if (!node) {
+            return null
+        }
+        while (index) {
+            node = node.next
+            index--
+        }
+        return node
+
+    }
+
 }
 
 

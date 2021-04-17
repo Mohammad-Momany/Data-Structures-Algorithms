@@ -86,8 +86,6 @@ class LinkedList {
         }
     }
 
-
-
     getAt(index) {
         let node = this.head
         if (!node) {
@@ -98,7 +96,17 @@ class LinkedList {
             index--
         }
         return node
+    }
 
+    removeAt(index) {
+        if (!this.head) {
+            return;
+        }
+
+        if (index === 0) {
+            this.head = this.head.next;
+            return;
+        }
     }
 
 }
